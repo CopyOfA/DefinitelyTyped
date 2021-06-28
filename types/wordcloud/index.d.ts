@@ -102,6 +102,11 @@ declare namespace WordCloud {
          * canvas word clouds.
          */
         click?: EventCallback;
+        
+        /**
+         *set to true to shrink the word so it will fit into canvas
+         */
+        shrinkToFit?: boolean;
     }
 
     interface Dimension {
