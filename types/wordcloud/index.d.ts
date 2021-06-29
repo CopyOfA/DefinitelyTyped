@@ -89,6 +89,11 @@ declare namespace WordCloud {
         shape?: string | ((theta: number) => number);
         /** degree of "flatness" of the shape wordcloud2.js should draw. */
         ellipticity?: number;
+        
+        /**
+        *set to true to shrink the word so it will fit into canvas; this word will now have lower weight
+        */
+        shrinkToFit?: boolean
 
         /**
          * callback to call when the cursor enters or leaves a region occupied by a word. The callback will take
